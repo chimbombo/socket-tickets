@@ -28,7 +28,7 @@ io.on('connection', (client) => {
         callback(ticketAttend);
 
         client.broadcast.emit('last4', {
-            last4: ticketAttend.getLast4()
+            last4: ticketControl.getLast4()
         })
     })
 });
